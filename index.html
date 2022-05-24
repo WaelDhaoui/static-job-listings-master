@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Job Listings</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function remove(e) {
+            [...e.previousElementSibling.children].forEach(function(ele) {
+                ele.remove();
+            });
+            e.parentElement.style.display = "none"; 
+            document.querySelectorAll("body > ul > li").forEach(function(ele) {
+                ele.style.display = "flex";
+            })
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="img">
+            <img src="images/bg-header-desktop.svg" alt="haeder_img/svg">
+        </div>
+        <div class="search" style="display: none;">
+            <ul>
+            </ul>
+            <p onclick=remove(this)>clear</p>
+        </div>
+    </header>
+    <ul>
+        <li class="features">
+            <div class="img">
+                <img src="images/photosnap.svg" alt="Photosnap">
+            </div>
+            <div>
+                <h4>Photosnap</h4>
+                <strong>Senior Frontend Developer</strong>
+                <ul>
+                    <li>1d ago</li>
+                    <li>Full Time</li>
+                    <li>USA only</li>
+                </ul>
+            </div>
+            <ul>
+                <li>Frontend</li>
+                <li>Senior</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </li>
+
+        <li class="features">
+            <div class="img">
+                <img src="images/manage.svg" alt="Manage">
+            </div>
+            <div>
+                <h4>Manage</h4>
+                <strong>Fullstack Developer</strong>
+                <ul>
+                    <li>1d ago</li>
+                    <li>Part Time</li>
+                    <li>Remote</li>
+                </ul>
+            </div>
+            <ul>
+                <li>Fullstack</li>
+                <li>Midweight</li>
+                <li>Python</li>
+                <li>React</li>
+            </ul>
+        </li>
+
+        <li>
+            <div class="img">
+                <img src="images/account.svg" alt="Account">
+            </div>
+            <div>
+                <h4>Account</h4>
+                <strong>Junior Frontend Developer</strong>
+                <ul>
+                    <li>2d ago</li>
+                    <li>Part Time</li>
+                    <li>USA only</li>
+                </ul>
+            </div>
+            <ul>
+                <li>Frontend</li>
+                <li>Junior</li>
+                <li>React</li>
+                <li>Sass</li>
+                <li>JavaScript</li>
+            </ul>
+        </li>
+
+        <li>
+            <div class="img">
+                <img src="images/myhome.svg" alt="MyHome">
+            </div>
+            <div>
+                <h4>MyHome</h4>
+                <strong>Junior Frontend Developer</strong>
+                <ul>
+                    <li>5d ago</li>
+                    <li>Contract</li>
+                    <li>USA only</li>
+                </ul>
+            </div>
+            <ul>
+                <li>Frontend</li>
+                <li>Junior</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </li>
+
+        <li>
+            <div class="img">
+                <img src="images/loop-studios.svg" alt="Loop Studios">
+            </div>
+            <div>
+                <h4>Loop Studios</h4>
+                <strong>Software Engineer</strong>
+                <ul>
+                    <li>1w ago</li>
+                    <li>Full Time</li>
+                    <li>Worldwide</li>
+                </ul>
+            </div>
+            <ul>
+                <li>Fullstack</li>
+                <li>Midweight</li>
+                <li>JavaScript</li>
+                <li>Sass</li>
+                <li>Ruby</li>
+            </ul>
+        </li>
+
+        <li>
+            <div class="img">
+                <img src="images/faceit.svg" alt="FaceIt">
+            </div>
+            <div>
+                <h4>FaceIt</h4>
+                <strong>Junior Backend Developer</strong>
+                <ul>
+                    <li>2w ago</li>
+                    <li>Full Time</li>
+                    <li>UK only</li>
+                </ul>
+            </div>
+            <ul>
+                <li>Backend</li>
+                <li>Junior</li>
+                <li>Ruby</li>
+                <li>RoR</li>
+            </ul>
+        </li>
+
+        <li>
+            <div class="img">
+                <img src="images/shortly.svg" alt="Shortly">
+            </div>
+            <div>
+                <h4>Shortly</h4>
+                <strong>Junior Developer</strong>
+                <ul>
+                    <li>2w ago</li>
+                    <li>Full Time</li>
+                    <li>Worldwide</li>
+                </ul>
+            </div>
+            <ul>
+                <li>Frontend</li>
+                <li>Junior</li>
+                <li>HTML</li>
+                <li>Sass</li>
+                <li>JavaScript</li>
+            </ul>
+        </li>
+
+        <li>
+            <div class="img">
+                <img src="images/insure.svg" alt="Insure">
+            </div>
+            <div>
+                <h4>Insure</h4>
+                <strong>Junior Frontend Developer</strong>
+                <ul>
+                    <li>2w ago</li>
+                    <li>Full Time</li>
+                    <li>USA only</li>
+                </ul>
+            </div>
+            <ul>
+                <li>Frontend</li>
+                <li>Junior</li>
+                <li>Vue</li>
+                <li>JavaScript</li>
+                <li>Sass</li>
+            </ul>
+        </li>
+
+        <li>
+            <div class="img">
+                <img src="images/eyecam-co.svg" alt="Eyecam Co.">
+            </div>
+            <div>
+                <h4>Eyecam Co.</h4>
+                <strong>Full Stack Engineer</strong>
+                <ul>
+                    <li>3w ago</li>
+                    <li>Full Time</li>
+                    <li>Worldwide</li>
+                </ul>
+            </div>
+            <ul>
+                <li>Fullstack</li>
+                <li>Midweight</li>
+                <li>JavaScript</li>
+                <li>Django</li>
+                <li>Python</li>
+            </ul>
+        </li>
+
+        <li>
+            <div class="img">
+                <img src="images/the-air-filter-company.svg" alt="Insure">
+            </div>
+            <div>
+                <h4>The Air Filter Company</h4>
+                <strong>Front-end Dev</strong>
+                <ul>
+                    <li>1mo ago</li>
+                    <li>Part Time</li>
+                    <li>Worldwide</li>
+                </ul>
+            </div>
+            <ul>
+                <li>Frontend</li>
+                <li>Junior</li>
+                <li>React</li>
+                <li>Sass</li>
+                <li>JavaScript</li>
+            </ul>
+        </li>
+    </ul>
+
+    <footer>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> 
+    Coded by <a href="https://www.linkedin.com/in/wael-dhaoui-2794501b3/">Wael</a>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
